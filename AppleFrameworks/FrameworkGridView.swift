@@ -8,31 +8,45 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
-    var body: some View {
-      FrameworkTitleView(name: "App Clips", imageName: "app-clip")
+  let columns: [GridItem] = [GridItem(.flexible()),
+                             GridItem(.flexible()),
+                             GridItem(.flexible())]
+
+  var body: some View {
+    NavigationView {
+      ScrollView {
+        LazyVGrid(columns: columns) {
+          ForEach(MockData.frameworks) { framework in
+            FrameworkTitleView(framework: framework)
+          }
+        }
+      }
+      .navigationTitle("🍎 Frameworks")
     }
+  }
 }
 
 struct FrameworkGridView_Previews: PreviewProvider {
-    static var previews: some View {
-        FrameworkGridView()
-    }
+  static var previews: some View {
+    FrameworkGridView()
+      .preferredColorScheme(.dark)
+  }
 }
 
 struct FrameworkTitleView: View {
-  let name: String
-  let imageName: String
+  let framework: Framework
 
   var body: some View {
     VStack {
-      Image(imageName)
+      Image(framework.imageName)
         .resizable()
         .frame(width: 90, height: 90)
-      Text(name)
+      Text(framework.name)
         .font(.title2)
         .fontWeight(.semibold)
         .scaledToFit()
         .minimumScaleFactor(0.5)
     }
+    .padding()
   }
 }
