@@ -14,6 +14,7 @@
 		36D10A5628B42E0A008DA4D3 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D10A5528B42E0A008DA4D3 /* Framework.swift */; };
 		36D10A5828B519C8008DA4D3 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D10A5728B519C8008DA4D3 /* FrameworkDetailView.swift */; };
 		36D10A5A28B55DC5008DA4D3 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D10A5928B55DC5008DA4D3 /* AFButton.swift */; };
+		36D10A5C28B56FEE008DA4D3 /* FrameworksGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D10A5B28B56FEE008DA4D3 /* FrameworksGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		36D10A5528B42E0A008DA4D3 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		36D10A5728B519C8008DA4D3 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		36D10A5928B55DC5008DA4D3 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
+		36D10A5B28B56FEE008DA4D3 /* FrameworksGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworksGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +63,10 @@
 				36D10A4928B42D0E008DA4D3 /* Assets.xcassets */,
 				36D10A5528B42E0A008DA4D3 /* Framework.swift */,
 				36D10A5328B42DC7008DA4D3 /* FrameworkGridView.swift */,
-				36D10A4B28B42D0E008DA4D3 /* Preview Content */,
 				36D10A5728B519C8008DA4D3 /* FrameworkDetailView.swift */,
 				36D10A5928B55DC5008DA4D3 /* AFButton.swift */,
+				36D10A5B28B56FEE008DA4D3 /* FrameworksGridViewModel.swift */,
+				36D10A4B28B42D0E008DA4D3 /* Preview Content */,
 			);
 			path = AppleFrameworks;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				36D10A5628B42E0A008DA4D3 /* Framework.swift in Sources */,
 				36D10A5A28B55DC5008DA4D3 /* AFButton.swift in Sources */,
 				36D10A5428B42DC7008DA4D3 /* FrameworkGridView.swift in Sources */,
+				36D10A5C28B56FEE008DA4D3 /* FrameworksGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
