@@ -10,6 +10,7 @@ import SwiftUI
 struct FrameworkGridView: View {
 
   @StateObject var viewModel = FrameworkGridViewModel()
+  @State private var isGrid = false
 
   var body: some View {
     NavigationView {
@@ -29,6 +30,7 @@ struct FrameworkGridView: View {
                             isShowingDetailView: $viewModel.isShowingDetailView)
       }
     }
+    .accentColor(Color(.label))
   }
 }
 
@@ -36,5 +38,6 @@ struct FrameworkGridView_Previews: PreviewProvider {
   static var previews: some View {
     FrameworkGridView()
       .preferredColorScheme(.dark)
+
   }
 }
