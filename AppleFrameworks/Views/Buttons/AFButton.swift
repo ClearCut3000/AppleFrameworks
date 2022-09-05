@@ -8,20 +8,24 @@
 import SwiftUI
 
 struct AFButton: View {
+
+  //MARK: - View Properties
   var title: String
-    var body: some View {
-      Text(title)
-        .font(.title2)
-        .fontWeight(.semibold)
-        .frame(width: 280, height: 50)
-        .background(.red)
-        .foregroundColor(.white)
-        .cornerRadius(10)
-    }
+  
+  //MARK: - View Body
+  var body: some View {
+    Text(title)
+      .font(.title2)
+      .fontWeight(.semibold)
+      .frame(width: 280, height: 50)
+      .background(.red)
+      .foregroundColor(.white)
+      .cornerRadius(10)
+  }
 }
 
 struct AFButton_Previews: PreviewProvider {
-    static var previews: some View {
-        AFButton(title: "Test")
-    }
+  static var previews: some View {
+    AFButton(title: "Test")
+  }
 }

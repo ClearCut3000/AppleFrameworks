@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct FrameworkTitleView: View {
+  
+  //MARK: - View Properties
   let framework: Framework
-
+  
+  //MARK: - View Body
   var body: some View {
     VStack {
       Image(framework.imageName)
@@ -26,7 +29,7 @@ struct FrameworkTitleView: View {
 }
 
 struct FrameworkTitleView_Previews: PreviewProvider {
-    static var previews: some View {
-      FrameworkTitleView(framework: MockData.sampleFramework)
-    }
+  static var previews: some View {
+    FrameworkTitleView(framework: MockData.sampleFramework)
+  }
 }

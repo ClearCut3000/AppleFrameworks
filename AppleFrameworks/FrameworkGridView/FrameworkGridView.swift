@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct FrameworkGridView: View {
-
+  
+  //MARK: - View Properties
   @StateObject var viewModel = FrameworkGridViewModel()
   @State private var isGrid = false
-
+  
+  //MARK: - View Body
   var body: some View {
     NavigationView {
       ScrollView {
@@ -26,8 +28,7 @@ struct FrameworkGridView: View {
       }
       .navigationTitle("🍎 Frameworks")
       .sheet(isPresented: $viewModel.isShowingDetailView) {
-        FrameworkDetailView(framework: viewModel.selectedFaramework ?? MockData.sampleFramework,
-                            isShowingDetailView: $viewModel.isShowingDetailView)
+        FrameworkDetailView(viewModel: FrameworkDetailViewModel(framework: viewModel.selectedFaramework!, isShowingDetailView: $viewModel.isShowingDetailView))
       }
     }
     .accentColor(Color(.label))
@@ -38,6 +39,6 @@ struct FrameworkGridView_Previews: PreviewProvider {
   static var previews: some View {
     FrameworkGridView()
       .preferredColorScheme(.dark)
-
+    
   }
 }
